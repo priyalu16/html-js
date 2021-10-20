@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function sayHi(tag) {
+            alert('Hi  ' + tag);
+        }
+
+        function over(elem) {
+            elem.style.color = 'red';
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn" onclick="sayHi('btn')" onmouseover="over(this)">Click me</button>
+    <input type="button" value="Click me this" onclick="sayHi('ip')" onmouseover="over(this)">
+
+    <span onclick="sayHi('span')" style="border:1px solid; margin:2px; padding:2px;border-radius: 2px;cursor: pointer;">
+        Click this div
+    </span>
+    
+
+</body>
+
+</html>
